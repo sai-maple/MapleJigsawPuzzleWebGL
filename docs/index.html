@@ -6,6 +6,7 @@
     <title>Unity WebGL Player | MaplePuzzle</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script type="text/javascript" src="WindowResize.js"></script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -17,11 +18,11 @@
         </div>
       </div>
       <div id="unity-warning"> </div>
-      <div id="unity-footer">
-        <div id="unity-webgl-logo"></div>
-        <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">MaplePuzzle</div>
-      </div>
+<!--      <div id="unity-footer">-->
+<!--        <div id="unity-webgl-logo"></div>-->
+<!--        <div id="unity-fullscreen-button"></div>-->
+<!--        <div id="unity-build-title">MaplePuzzle</div>-->
+<!--      </div>-->
     </div>
     <script>
       var container = document.querySelector("#unity-container");
@@ -89,7 +90,7 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-        unityShowBanner('WebGL builds are not supported on mobile devices.');
+        // unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
